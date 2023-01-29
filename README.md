@@ -41,6 +41,11 @@ This is the challenge for UT Boot camp module 10.
 
 Full-Stack Blog - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
+Jest - https://www.npmjs.com/package/jest
+
+Inquirer - https://www.npmjs.com/package/inquirer/v/8.2.4 
+
+
 ## License
 
 Please see LICENSE file.
