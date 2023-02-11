@@ -1,0 +1,33 @@
+.team-heading {
+  background-color: #2164f3;
+  color: #ffffff;
+  padding: 5;
+  margin-bottom: 3;
+}
+
+.team-area {
+  max-width: 1000px;
+  margin: 3em auto;
+  flex-wrap: wrap;
+}
+
+.employee-card {
+  background-color: #2164f3;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  margin: 1em;
+  max-width: 280px;
+  width: 90%;
+  min-height: 22rem;
+  box-shadow: 5px 5px 10px #000063;
+  border: none;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ececff;
+}
