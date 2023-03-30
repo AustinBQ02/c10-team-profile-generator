@@ -5,8 +5,19 @@
 // THEN that GitHub profile opens in a new tab
 
 // function to create team based on input from prompt
+const generateTeam = team => {
+    // create manager card
+    const generateManager = manager => {
+        return `
+        
+        `;
+    };
 
-// create manager card
+
+
+}
+
+
 
 // create engineer cards
 

@@ -2,11 +2,18 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const Employee = require('./lib/Employee');
 
 // Uses the Inquirer package
 const inquirer = require("inquirer");
 // Uses the Jest
 const path = require("path");
+const fs = require('fs');
+
+const DIST_DIR = path.resolve(__dirname, 'dist');
+const distPath = path.join(DIST_DIR, 'team.html');
+
+const render = require('./src/team-template.js');
 
 // global variables to take in team member info
 const teamMembers = [];
@@ -124,6 +131,58 @@ const mainMenu = () => {
         // testing
         newTeam();
       });
+  };
+
+  const newIntern = () => {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "internName",
+          message: "What is your intern's name?",
+        },
+        {
+          type: "input",
+          name: "internId",
+          message: "What is your intern's ID?",
+        },
+        {
+          type: "input",
+          name: "internEmail",
+          message: "What is your intern's email address?",
+        },
+        {
+          type: "input",
+          name: "internSchool",
+          message: "What is your intern's school?",
+        },
+      ])
+      .then((answers) => {
+        const intern = new Intern(
+          answers.internName,
+          answers.internId,
+          answers.internEmail,
+          answers.internSchool
+        );
+        teamMembers.push(intern);
+        arrId.push(answers.internId);
+        // testing
+        console.log(
+          `\nTeam Array: \n${JSON.stringify(
+            teamMembers
+          )} \nID Array: \n${arrId}`
+        );
+        // testing
+        newTeam();
+      });
+  };
+
+  function createProfile() {
+    // Create the output directory if the dist path doesn't exist
+    if (!fs.existsSync(DIST_DIR)) {
+      fs.mkdirSync(DIST_DIR);
+    }
+    fs.writeFileSync(distPath, render(teamMembers), 'utf-8');
   };
 
   // welcome user and prompt for new manager info

@@ -4,7 +4,9 @@
   "description": "This is the challenge for UT Boot camp module 10.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js",
+    "reset": "node reset.js"
   },
   "repository": {
     "type": "git",
