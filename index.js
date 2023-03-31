@@ -122,13 +122,6 @@ const mainMenu = () => {
         );
         teamMembers.push(engineer);
         arrId.push(answers.engId);
-        // testing
-        console.log(
-          `\nTeam Array: \n${JSON.stringify(
-            teamMembers
-          )} \nID Array: \n${arrId}`
-        );
-        // testing
         newTeam();
       });
   };
