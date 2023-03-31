@@ -2,18 +2,18 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const Employee = require('./lib/Employee');
+const Employee = require("./lib/Employee");
 
 // Uses the Inquirer package
 const inquirer = require("inquirer");
 // Uses the Jest
 const path = require("path");
-const fs = require('fs');
+const fs = require("fs");
 
-const DIST_DIR = path.resolve(__dirname, 'dist');
-const distPath = path.join(DIST_DIR, 'team.html');
+const DIST_DIR = path.resolve(__dirname, "dist");
+const distPath = path.join(DIST_DIR, "team.html");
 
-const render = require('./src/team-template.js');
+const render = require("./src/team-template.js");
 
 // global variables to take in team member info
 const teamMembers = [];
@@ -159,13 +159,7 @@ const mainMenu = () => {
         );
         teamMembers.push(intern);
         arrId.push(answers.internId);
-        // testing
-        console.log(
-          `\nTeam Array: \n${JSON.stringify(
-            teamMembers
-          )} \nID Array: \n${arrId}`
-        );
-        // testing
+
         newTeam();
       });
   };
@@ -175,8 +169,8 @@ const mainMenu = () => {
     if (!fs.existsSync(DIST_DIR)) {
       fs.mkdirSync(DIST_DIR);
     }
-    fs.writeFileSync(distPath, render(teamMembers), 'utf-8');
-  };
+    fs.writeFileSync(distPath, render(teamMembers), "utf-8");
+  }
 
   // welcome user and prompt for new manager info
   console.log("\nWelcome to the team profile generator!\n");
