@@ -4,46 +4,40 @@ This is the challenge for UT Boot camp module 10.
 
 ## Description
 
-> Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:  
->   
-> - What was your motivation?  
-> - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")  
-> - What problem does it solve?  
-> - What did you learn?  
+This app is a Node.js command-line application that takes in information about team members from user prompts and generates an HTML page to display that data.
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
-## Installation
+[Walkthru Video](https://drive.google.com/file/d/1Su_NqDgwRw6Opj_jn1btAE0WY4NJpqgs/view?usp=sharing)
 
-> What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 ## Usage
 
-> Provide instructions and examples for use. Include screenshots as needed.
->   
-> To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:  
->   
->   `![alt text](assets/images/screenshot.png)`
+- Type `npm start` to begin. 
+- Enter information as requested by the prompts.
+- Once done, a `team.html` file will be generated. 
+- View the team profile in a browser.
+
+![prompts](https://user-images.githubusercontent.com/77471738/229223203-2bc5a234-9a6b-496b-8eeb-5ce5bc325362.jpg)
+
+![team](https://user-images.githubusercontent.com/77471738/229223407-3e3042e8-83fd-4dd3-8f2e-0205f78eb14e.jpg)
+
 
 
 ## Credits
 
-> List your collaborators, if any, with links to their GitHub profiles.
-> 
-> If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-> 
-> If you followed tutorials, include links to those here as well.
 
 Full-Stack Blog - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
 Jest - https://www.npmjs.com/package/jest
 
 Inquirer - https://www.npmjs.com/package/inquirer/v/8.2.4 
+
+UT Coding Bootcamp Module 10
 
 
 ## License
