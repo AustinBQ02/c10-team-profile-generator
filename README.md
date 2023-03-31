@@ -8,9 +8,12 @@ This app is a Node.js command-line application that takes in information about t
 
 ## Table of Contents
 
+- [Demo / Walkthru](#demo)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+
+## Demo
 
 [Walkthru Video](https://drive.google.com/file/d/1Su_NqDgwRw6Opj_jn1btAE0WY4NJpqgs/view?usp=sharing)
 
